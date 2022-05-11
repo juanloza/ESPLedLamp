@@ -29,7 +29,7 @@ void setup() {
     FastLED.addLeds<CHIPSET,19, COLOR_ORDER>(leds[7], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,21, COLOR_ORDER>(leds[8], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,22, COLOR_ORDER>(leds[9], NUM_LEDS).setCorrection( TypicalLEDStrip );
-    FastLED.setBrightness( BRIGHTNESS );
+    FastLED.setBrightness( brightness );
 }
 
 void loop() {

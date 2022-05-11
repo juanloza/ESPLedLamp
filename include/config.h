@@ -24,9 +24,9 @@ CRGB leds[NUM_STRIPS][NUM_LEDS];
 const char* ssid = "VivaElVino";
 const char* password = "iJcrqf07";
 
-enum TypeMode{
+typedef enum TypeMode{
     FIRE, PLAIN, BEATING, RGBLOOP, STROBE, FADEINOUT, EYES, CYLONBOUNCE, NEWKITT, TWINKLE, TWINKLERANDOM, SPARKLE, SNOWSPARKLE, RUNNINGLIGHTS, COLORWIPE, RAINBOWCYCLE
-};
+}TypeMode;
 
 typedef struct fireConfigType{
     uint8_t cooling;
