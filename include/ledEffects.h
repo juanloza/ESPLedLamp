@@ -53,10 +53,7 @@ CRGBPalette16 setCustomPalette(const CRGB& c1, const CRGB& c2, const CRGB& c3, c
 
 void Fire2012WithPalette()
 {
-    gPal = SelectPalette(fireConfig.paletteIndex);
-
-    //gPal = setCustomPalette((255,0,0),(255,255,0),(0,255,0),(0,0,255));
-
+    random16_add_entropy(random());
     // Array of temperature readings at each simulation cell
     static uint8_t heat[NUM_STRIPS][NUM_LEDS];
 
@@ -82,7 +79,7 @@ void Fire2012WithPalette()
             // Scale the heat value from 0-255 down to 0-240
             // for best results with color palettes.
             uint8_t colorindex = scale8( heat[s][j], 240);
-            CRGB color = ColorFromPalette( gPal, colorindex, brightness, currentBlending);
+            CRGB color = ColorFromPalette( *fireConfig.palette, colorindex, brightness, currentBlending);
             int pixelnumber;
             if( gReverseDirection ) {
                 pixelnumber = (NUM_LEDS-1) - j;

@@ -38,8 +38,6 @@ void loop() {
         delay(2000);
         return;
     }
-
-    random16_add_entropy( random());
     
     RunLedEffects();
 

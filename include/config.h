@@ -2,6 +2,7 @@
 #define LAMPCONFIG_H
 
 #include <FastLED.h>
+#include "customPalettes.h"
 
 //BASIC LEDS
 #define NUM_STRIPS 10
@@ -15,7 +16,6 @@ TBlendType currentBlending = LINEARBLEND;
 
 //LED EFFECTS
 bool gReverseDirection = false;
-CRGBPalette16 gPal;
 CRGB leds[NUM_STRIPS][NUM_LEDS];
 #define COOLING  55
 #define SPARKING 120
@@ -31,10 +31,19 @@ typedef enum TypeMode{
 typedef struct fireConfigType{
     uint8_t cooling;
     uint8_t sparking;
-    CRGBPalette16 palette;
+    CRGBPalette16 *palette;
     u_int8_t paletteIndex;
 }fireConfigType;
 
+CRGBPalette16 *firePaletteList[5] = {
+    &(CRGBPalette16)HeatColors_p,
+    &(CRGBPalette16)CloudColors_p,
+    &(CRGBPalette16)LlamaAzul_p,
+    &(CRGBPalette16)LlamaVerde_p,
+    &(CRGBPalette16)LlamaVioleta_p,
+};
+
+bool hasChanges = false;
 bool enabled;
 TypeMode mode;
 fireConfigType fireConfig;
@@ -42,7 +51,7 @@ fireConfigType fireConfig;
 void loadDefaultConfig(){
     enabled = false;
     mode = TypeMode::FIRE;
-    fireConfig = {55, 120, HeatColors_p, 0};
+    fireConfig = {55, 120, &(CRGBPalette16)HeatColors_p, 0};
 }
 
 String getJsonConfig(){

@@ -1,0 +1,392 @@
+[
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmppzoy1b9o.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\Esp.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp80bkol0c.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\FirmwareMSC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp97rss54b.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\FunctionalInterrupt.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpnp2jy2wn.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\HWCDC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpsjgfu5j9.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\HardwareSerial.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpg8hc56yj.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\IPAddress.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp6rpr4eyz.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\IPv6Address.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp9gkvjlpp.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\MD5Builder.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpgdz7u35i.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\Print.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpu547cj_j.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\Stream.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpw9zq0nvw.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\StreamString.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp19q5i_ww.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\Tone.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp2ji0krp1.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\USB.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp9yo5p9uy.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\USBCDC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpvbm2lmys.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\USBMSC.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpgflzvav4.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\WMath.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp_bnbbrzp.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\WString.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp_xhcqa3z.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\base64.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpojcjrbac.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\cbuf.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpf8yx04re.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-adc.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp8jzactej.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-bt.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmped62r_7c.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-cpu.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpz9bk6_8t.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-dac.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp6cwb5rpr.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-gpio.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmppr2lpnf6.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-i2c-slave.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpq6wv3j_p.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-i2c.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpvrf2zlxs.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-ledc.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpbpnbo_te.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-matrix.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpg5gippoo.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-misc.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp77fxfzd7.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-psram.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp6tu92rxo.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-rmt.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpnki69c8v.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-sigmadelta.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp3116ub5r.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-spi.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp62s8logh.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-time.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpi3ljz6mm.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-timer.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp9ug4qt0c.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-tinyusb.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpjtpkovn2.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-touch.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpukbda1u5.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\esp32-hal-uart.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp4ww8c1j_.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\firmware_msc_fat.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpqpnk01qv.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\libb64\\cdecode.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpk5w97wa4.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\libb64\\cencode.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpzzl5aw4s.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\main.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpcq_zj73v.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\stdlib_noniso.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpp4zhvd1_.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\wiring_pulse.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp8tsxlc56.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\cores\\esp32\\wiring_shift.c"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmplf_3emi6.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\AsyncTCP\\src\\AsyncTCP.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpw8mkgjgq.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\FS\\src\\FS.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpdb5p9qm5.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\FS\\src\\vfs_api.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpprqvcuhq.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFi.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp2d3yvrax.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiAP.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp_eypt29z.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiClient.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpb0pwvxgd.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiGeneric.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpxp_nzuf4.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiMulti.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp3zz3mip5.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiSTA.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp2rkujhd6.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiScan.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpxx3vt5kh.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiServer.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpce2erzyy.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\WiFi\\src\\WiFiUdp.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpy2d4kdg9.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\AsyncEventSource.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmphjcldj4u.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\AsyncWebSocket.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpqknksdq6.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\SPIFFSEditor.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpe1me5soo.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\WebAuthentication.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp75jnpmoi.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\WebHandlers.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpej7ln__c.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\WebRequest.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp85zfjnlu.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\WebResponses.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpbjkjo3wd.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\ESP Async WebServer\\src\\WebServer.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpo92uq3fi.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\.platformio\\packages\\framework-arduinoespressif32\\libraries\\SPI\\src\\SPI.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp58yawru4.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\FastLED.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpfdudr91x.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\bitswap.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmprg97j3q2.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\colorpalettes.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpnojjbl8o.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\colorutils.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpe4qjcd0o.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\hsv2rgb.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpbx5qt9wx.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\lib8tion.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmps3u4tlmu.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\noise.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmpxbqlu56_.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\platforms.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmphezsdgzj.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\platforms\\esp\\32\\clockless_rmt_esp32.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp6yuddfoe.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\power_mgt.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmppjwe_qlb.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\libdeps\\esp32doit-devkit-v1\\FastLED\\src\\wiring.cpp"
+    },
+    {
+        "command": "C:\\Users\\Juan\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-g++.exe @C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\.pio\\build\\esp32doit-devkit-v1\\tmp308f7tt9.tmp",
+        "directory": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp",
+        "file": "C:\\Users\\Juan\\Documents\\PlatformIO\\Projects\\ESPLedLamp\\src\\main.cpp"
+    }
+]

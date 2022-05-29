@@ -6,7 +6,11 @@
 
 AsyncWebServer server = AsyncWebServer(80);
 
+const char* p_enabled = "enabled";
 const char* p_mode = "mode";
+const char* p_fire_cooling = "cooling";
+const char* p_fire_sparking = "sparking";
+const char* p_fire_palette = "palette";
 
 bool connectToWIFI(){
     WiFi.mode(WIFI_STA);
@@ -33,9 +37,29 @@ void getConfigHanlder(AsyncWebServerRequest *request){
     request->send(200, "application/json", getJsonConfig());
 }
 
-void setModeHandler(AsyncWebServerRequest *request){
+void turnOnOffHandler(AsyncWebServerRequest *request){
+    if (!request->hasParam(p_enabled)) {
+        request->send(400, "text/plain", "Bad request: mandatory enabled param not sent");
+        return;
+    }
+    bool new_enabled = (bool)request->getParam(p_mode)->value().toInt();
+    if(new_enabled!=enabled){
+        hasChanges = true;
+        enabled = new_enabled;
+    }
+    request->send(200, "text/plain", new_enabled?"1":"0");
+}
+
+void setFireModeConfig(AsyncWebServerRequest *request){
+    fireConfig.cooling=request->getParam(p_fire_cooling)->value().toInt();
+    fireConfig.sparking=request->getParam(p_fire_sparking)->value().toInt();
+    fireConfig.paletteIndex=request->getParam(p_fire_palette)->value().toInt();
+    fireConfig.palette = firePaletteList[fireConfig.paletteIndex];
+}
+
+void setModeConfigHandler(AsyncWebServerRequest *request){
     if (!request->hasParam(p_mode)) {
-        request->send(400, "text/plain", "Bad request: mandatory mode not sent");
+        request->send(400, "text/plain", "Bad request: mandatory mode param not sent");
         return;
     }
 
@@ -45,6 +69,7 @@ void setModeHandler(AsyncWebServerRequest *request){
     switch (mode)
     {
     case TypeMode::FIRE:
+        setFireModeConfig(request);
         modoTexto = "Fuego";
         break;
     case TypeMode::PLAIN :
@@ -104,7 +129,8 @@ void addServerHandlers(){
     server.onNotFound(notFoundHandler);
     server.on("/ping", HTTP_GET, pingHanlder);
     server.on("/getConfig", HTTP_GET,  getConfigHanlder);
-    server.on("/setMode", HTTP_ANY,  setModeHandler);
+    server.on("/turnOnOff", HTTP_GET, turnOnOffHandler);
+    server.on("/setModeConfig", HTTP_ANY,  setModeConfigHandler);
 
     server.begin();
 }
