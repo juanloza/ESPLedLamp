@@ -79,7 +79,7 @@ void Fire2012WithPalette()
             // Scale the heat value from 0-255 down to 0-240
             // for best results with color palettes.
             uint8_t colorindex = scale8( heat[s][j], 240);
-            CRGB color = ColorFromPalette( *fireConfig.palette, colorindex, brightness, currentBlending);
+            CRGB color = ColorFromPalette( *fireConfig.palette, colorindex, fireConfig.brightness, currentBlending);
             int pixelnumber;
             if( gReverseDirection ) {
                 pixelnumber = (NUM_LEDS-1) - j;

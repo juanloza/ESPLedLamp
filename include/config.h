@@ -9,9 +9,8 @@
 #define NUM_LEDS 60
 #define COLOR_ORDER GRB
 #define CHIPSET     WS2813
-//#define BRIGHTNESS  200
 #define FRAMES_PER_SECOND 60
-u_int8_t brightness = 200;
+//uint8_t brightness = 200;
 TBlendType currentBlending = LINEARBLEND;
 
 //LED EFFECTS
@@ -31,8 +30,9 @@ typedef enum TypeMode{
 typedef struct fireConfigType{
     uint8_t cooling;
     uint8_t sparking;
+    uint8_t brightness;
     CRGBPalette16 *palette;
-    u_int8_t paletteIndex;
+    uint8_t paletteIndex;
 }fireConfigType;
 
 CRGBPalette16 *firePaletteList[5] = {
@@ -51,7 +51,7 @@ fireConfigType fireConfig;
 void loadDefaultConfig(){
     enabled = false;
     mode = TypeMode::FIRE;
-    fireConfig = {55, 120, &(CRGBPalette16)HeatColors_p, 0};
+    fireConfig = {55, 120, 255, &(CRGBPalette16)HeatColors_p, 0};
 }
 
 String getJsonConfig(){
@@ -63,6 +63,7 @@ String getJsonConfig(){
     json+=tab+"fireconfig:{"+ln;
     json+=tab+tab+"cooling:"+(String)fireConfig.cooling+','+ln;
     json+=tab+tab+"sparking:"+(String)fireConfig.sparking+','+ln;
+    json+=tab+tab+"brightness:"+(String)fireConfig.brightness+','+ln;
     json+=tab+tab+"palette:"+(String)fireConfig.paletteIndex+ln;
     json+=tab+"}"+ln;
     json+="}";
