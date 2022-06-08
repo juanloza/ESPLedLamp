@@ -6,11 +6,16 @@
 
 AsyncWebServer server = AsyncWebServer(80);
 
+const char* p_param = "param";
+const char* p_value = "value";
 const char* p_enabled = "enabled";
 const char* p_mode = "mode";
-const char* p_fire_cooling = "cooling";
-const char* p_fire_sparking = "sparking";
-const char* p_fire_palette = "palette";
+const char* p_cooling = "cooling";
+const char* p_sparking = "sparking";
+const char* p_palette = "palette";
+const char* p_brightness = "brightness";
+const char* p_color = "color";
+const char* p_numLeds = "numleds";
 
 bool connectToWIFI(){
     WiFi.mode(WIFI_STA);
@@ -33,104 +38,158 @@ void pingHanlder(AsyncWebServerRequest *request){
     request->send(200, "text/plain", "OK");
 }
 
-void getConfigHanlder(AsyncWebServerRequest *request){
+void getAllConfigHanlder(AsyncWebServerRequest *request){
     request->send(200, "application/json", getJsonConfig());
 }
+void getModeConfigHanlder(AsyncWebServerRequest *request){
+    request->send(200, "application/json", getJsonConfig(true));
+}
 
-void turnOnOffHandler(AsyncWebServerRequest *request){
-    if (!request->hasParam(p_enabled)) {
-        request->send(400, "text/plain", "Bad request: mandatory enabled param not sent");
-        return;
+void setEnabledConfig(AsyncWebServerRequest *request, bool singleParam){
+    bool new_enabled;
+    if(singleParam){
+        new_enabled = (bool)request->getParam(p_value)->value().toInt();
+    }else{
+        new_enabled = (bool)request->getParam(p_enabled)->value().toInt();
     }
-    bool new_enabled = (bool)request->getParam(p_mode)->value().toInt();
     if(new_enabled!=enabled){
         hasChanges = true;
         enabled = new_enabled;
     }
-    request->send(200, "text/plain", new_enabled?"1":"0");
 }
 
-void setFireModeConfig(AsyncWebServerRequest *request){
-    fireConfig.cooling=request->getParam(p_fire_cooling)->value().toInt();
-    fireConfig.sparking=request->getParam(p_fire_sparking)->value().toInt();
-    fireConfig.paletteIndex=request->getParam(p_fire_palette)->value().toInt();
-    fireConfig.palette = firePaletteList[fireConfig.paletteIndex];
+void setPlainModeConfig(AsyncWebServerRequest *request, String param="", String value=""){
+    if(param==p_color || request->hasParam(p_color)){
+        uint32_t colorInt = request->getParam(param!=""?value:p_color)->value().toInt();
+        //remove alpha
+        colorInt-=0xFF000000;
+        plainConfig.color = CRGB(colorInt);
+    }
+    if(param==p_brightness || request->hasParam(p_brightness)){
+        plainConfig.brightness=request->getParam(param!=""?value:p_brightness)->value().toInt();
+    }
+    if(param==p_numLeds || request->hasParam(p_numLeds)){
+        plainConfig.numLeds=request->getParam(param!=""?value:p_numLeds)->value().toInt();
+    }
 }
 
-void setModeConfigHandler(AsyncWebServerRequest *request){
-    if (!request->hasParam(p_mode)) {
-        request->send(400, "text/plain", "Bad request: mandatory mode param not sent");
+void setFireModeConfig(AsyncWebServerRequest *request, String param="", String value=""){
+    if(param==p_cooling || request->hasParam(p_cooling)){
+        fireConfig.cooling=request->getParam(param!=""?value:p_cooling)->value().toInt();
+    }
+    if(param==p_sparking || request->hasParam(p_sparking)){
+        
+        fireConfig.sparking=request->getParam(param!=""?value:p_sparking)->value().toInt();
+    }
+    if(param==p_palette || request->hasParam(p_palette)){
+        fireConfig.paletteIndex=request->getParam(param!=""?value:p_palette)->value().toInt();
+        fireConfig.palette = SelectPalette(fireConfig.paletteIndex);
+    }
+    if(param==p_brightness || request->hasParam(p_brightness)){
+        fireConfig.brightness=request->getParam(param!=""?value:p_brightness)->value().toInt();
+    }
+        
+}
+
+void setSingleParamHandler(AsyncWebServerRequest *request){
+    if (!request->hasParam(p_param)) {
+        request->send(400, "text/plain", "Bad request: mandatory param \"param\" not sent");
         return;
     }
+    if (!request->hasParam(p_value)) {
+        request->send(400, "text/plain", "Bad request: mandatory param \"value\" not sent");
+        return;
+    }
+    String param = request->getParam(p_param)->value();
+    String value = request->getParam(p_value)->value();
 
-    int i_mode = std::stoi(request->getParam(p_mode)->value().c_str());
-    mode = static_cast<TypeMode>(i_mode);
-    String modoTexto;
+    setEnabledConfig(request, true);
+    
     switch (mode)
     {
     case TypeMode::FIRE:
-        setFireModeConfig(request);
-        modoTexto = "Fuego";
+        setFireModeConfig(request, param, value);
         break;
     case TypeMode::PLAIN :
-        modoTexto = "Color plano";
-        break;
-    case TypeMode::BEATING:
-        modoTexto = "Beating";
-        break;
-    case TypeMode::RGBLOOP:
-        modoTexto = "RGB Loop";
-        break;
-    case TypeMode::STROBE:
-        modoTexto = "Strobe";
-        break;
-    case TypeMode::FADEINOUT:
-        modoTexto = "Fade InOut";
-        break;
-    case TypeMode::EYES:
-        modoTexto = "Eyes";
-        break;
-    case TypeMode::CYLONBOUNCE:
-        modoTexto = "Cyclon bounce";
-        break;
-    case TypeMode::NEWKITT:
-        modoTexto = "New KITT";
-        break;
-    case TypeMode::TWINKLE:
-        modoTexto = "Twinkle";
-        break;
-    case TypeMode::TWINKLERANDOM:
-        modoTexto = "Twinkle Random";
-        break;
-    case TypeMode::SPARKLE:
-        modoTexto = "Sparkle";
-        break;
-    case TypeMode::SNOWSPARKLE:
-        modoTexto = "Strobe";
-        break;
-    case TypeMode::RUNNINGLIGHTS:
-        modoTexto = "Strobe";
-        break;
-    case TypeMode::COLORWIPE:
-        modoTexto = "Strobe";
-        break;
-    case TypeMode::RAINBOWCYCLE:
-        modoTexto = "Strobe";
+        setPlainModeConfig(request, param, value);
         break;
     
     default:
         break;
     }
-    request->send(200, "application/json", modoTexto);
+    
+    request->send(200, "text/plain", "OK");
+}
+
+void setModeConfigHandler(AsyncWebServerRequest *request){
+    if (!request->hasParam(p_enabled,false,false)) {
+        request->send(400, "text/plain", "Bad request: mandatory param \"enabled\" not sent");
+        return;
+    }
+    if (!request->hasParam(p_mode,false,false)) {
+        request->send(400, "text/plain", "Bad request: mandatory param \"mode\" not sent");
+        return;
+    }
+    
+    setEnabledConfig(request, false);
+
+    int i_mode = request->getParam(p_mode)->value().toInt();
+    mode = static_cast<TypeMode>(i_mode);
+    String modoTexto;
+    switch (mode)
+    {
+    case TypeMode::TEST :
+        break;
+    case TypeMode::PLAIN:
+        setPlainModeConfig(request);
+        break;
+    case TypeMode::FIRE:
+        setFireModeConfig(request);
+        break;
+    case TypeMode::BEATING:
+        break;
+    case TypeMode::RGBLOOP:
+        break;
+    case TypeMode::STROBE:
+        break;
+    case TypeMode::FADEINOUT:
+        break;
+    case TypeMode::EYES:
+        break;
+    case TypeMode::CYLONBOUNCE:
+        break;
+    case TypeMode::NEWKITT:
+        break;
+    case TypeMode::TWINKLE:
+        break;
+    case TypeMode::TWINKLERANDOM:
+        break;
+    case TypeMode::SPARKLE:
+        break;
+    case TypeMode::SNOWSPARKLE:
+        break;
+    case TypeMode::RUNNINGLIGHTS:
+        break;
+    case TypeMode::COLORWIPE:
+        break;
+    case TypeMode::RAINBOWCYCLE:
+        break;
+    
+    default:
+        break;
+    }
+    hasChanges = true;
+    request->send(200, "text/plain", "OK");
     //request->send(200, "application/json", getJsonConfig());
 }
 
 void addServerHandlers(){
     server.onNotFound(notFoundHandler);
     server.on("/ping", HTTP_GET, pingHanlder);
-    server.on("/getConfig", HTTP_GET,  getConfigHanlder);
-    server.on("/turnOnOff", HTTP_GET, turnOnOffHandler);
-    server.on("/setModeConfig", HTTP_ANY,  setModeConfigHandler);
+    server.on("/getAllConfig", HTTP_GET,  getAllConfigHanlder);
+    server.on("/getModeConfig", HTTP_GET,  getModeConfigHanlder);
+    server.on("/setSingleParam", HTTP_GET, setSingleParamHandler);
+    server.on("/setModeConfig", HTTP_GET,  setModeConfigHandler);
 
     server.begin();
 }

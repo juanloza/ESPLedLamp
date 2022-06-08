@@ -1,3 +1,6 @@
+#define FASTLED_ALLOW_INTERRUPTS 0
+#define FASTLED_INTERRUPT_RETRY_COUNT 0
+
 #include <Arduino.h>
 #include <WiFi.h>
 #include <AsyncTCP.h>
@@ -19,8 +22,8 @@ void setup() {
 
     loadDefaultConfig();
 
-    FastLED.addLeds<CHIPSET,12, COLOR_ORDER>(leds[0], NUM_LEDS).setCorrection( TypicalLEDStrip );
-    FastLED.addLeds<CHIPSET,13, COLOR_ORDER>(leds[1], NUM_LEDS).setCorrection( TypicalLEDStrip );
+    FastLED.addLeds<CHIPSET,13, COLOR_ORDER>(leds[0], NUM_LEDS).setCorrection( TypicalLEDStrip );
+    FastLED.addLeds<CHIPSET,12, COLOR_ORDER>(leds[1], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,27, COLOR_ORDER>(leds[2], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,25, COLOR_ORDER>(leds[3], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,32, COLOR_ORDER>(leds[4], NUM_LEDS).setCorrection( TypicalLEDStrip );  
@@ -29,18 +32,14 @@ void setup() {
     FastLED.addLeds<CHIPSET,19, COLOR_ORDER>(leds[7], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,21, COLOR_ORDER>(leds[8], NUM_LEDS).setCorrection( TypicalLEDStrip );
     FastLED.addLeds<CHIPSET,22, COLOR_ORDER>(leds[9], NUM_LEDS).setCorrection( TypicalLEDStrip );
-    FastLED.setBrightness( brightness );
+    // FastLED.setBrightness( brightness );
 }
 
 void loop() {
-    Serial.println("LOOP");
     if(!enabled){
         delay(2000);
         return;
     }
     
     RunLedEffects();
-
-    FastLED.show();
-    FastLED.delay(1000 / FRAMES_PER_SECOND);
 }

@@ -3,7 +3,15 @@
 
 #include <FastLED.h>
 
-extern const TProgmemRGBPalette16 LlamaAzul_p FL_PROGMEM =
+CRGBPalette16 LlamaRoja_p =
+{
+    0x000000,
+    0x330000, 0x660000, 0x990000, 0xCC0000, 0xFF0000,
+    0xFF3300, 0xFF6600, 0xFF9900, 0xFFCC00, 0xFFFF00,
+    0xFFFF33, 0xFFFF66, 0xFFFF99, 0xFFFFCC, 0xFFFFFF
+};
+
+CRGBPalette16 LlamaAzul_p =
 {
     0x000000,
     0x000033, 0x000066, 0x000099, 0x0000CC, 0x0000FF,
@@ -11,7 +19,7 @@ extern const TProgmemRGBPalette16 LlamaAzul_p FL_PROGMEM =
     0x33FFFF, 0x66FFFF, 0x99FFFF, 0xCCFFFF, 0xFFFFFF
 };
 
-extern const TProgmemRGBPalette16 LlamaVerde_p FL_PROGMEM =
+CRGBPalette16 LlamaVerde_p =
 {
     0x000000,
     0x003300, 0x006600, 0x009900, 0x00CC00, 0x00FF00,
@@ -19,7 +27,7 @@ extern const TProgmemRGBPalette16 LlamaVerde_p FL_PROGMEM =
     0xFFFF33, 0xFFFF66, 0xFFFF99, 0xFFFFCC, 0xFFFFFF
 };
 
-extern const TProgmemRGBPalette16 LlamaVioleta_p FL_PROGMEM =
+CRGBPalette16 LlamaVioleta_p =
 {
     0x000000,
     0x1B0033, 0x360066, 0x510099, 0x6C00CC, 0x8800FF,
