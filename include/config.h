@@ -9,7 +9,6 @@
 #define NUM_LEDS 60
 #define COLOR_ORDER GRB
 #define CHIPSET     WS2813
-//#define BRIGHTNESS  200
 #define FRAMES_PER_SECOND 60
 
 //LED EFFECTS
