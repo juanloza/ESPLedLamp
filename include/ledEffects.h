@@ -4,17 +4,29 @@
 #include <FastLED.h>
 #include "config.h"
 
+float scale_to_palette = (255.0/NUM_LEDS);
+
 CRGBPalette16* SelectPalette(u_int8_t p){
     switch (p)
     {
     case 0:
         return &LlamaRoja_p;
     case 1:
-        return &LlamaAzul_p;
+        return &LlamaVerdeAmarilla_p;
     case 2:
-        return &LlamaVerde_p;
+        return &LlamaVerdeAzul_p;
     case 3:
+        return &LlamaAzul_p;
+    case 4:
         return &LlamaVioleta_p;
+    case 5:
+        return &LlamaRosa_p;
+    case 6:
+        return &LlamaNaranjaButano_p;
+    case 7:
+        return &LlamaTest_p;
+    // case 8:
+    //     return &testPalette;
     /*
     case 4:
         return &(CRGBPalette16)ForestColors_p;
@@ -48,7 +60,8 @@ CRGBPalette16* SelectPalette(u_int8_t p){
     }
 }
 
-void TurnOff(){
+///Fill all leds of all stripes to black
+void TurnOffLeds(){
     for (uint8_t s=0; s<NUM_STRIPS; s++)
     {
         fill_solid(leds[s], NUM_LEDS, CRGB::Black);
@@ -56,7 +69,8 @@ void TurnOff(){
     FastLED.show();
 }
 
-void TestLeds(){
+///Test mode main run function
+void RunTestLeds(){
     for(int s=0; s<NUM_STRIPS;s++){
         for(int i=0; i<NUM_LEDS;i++){
             leds[s][i] = CRGB::Red;
@@ -75,7 +89,8 @@ void TestLeds(){
     }
 }
 
-void PlainColor(){
+///Plain color mode main run function
+void RunPlainColor(){
     //Fill all leds with selected color
     uint8_t s;
     uint8_t i;
@@ -101,7 +116,7 @@ void PlainColor(){
                 o  -  o  -  o  -  o  1
                 o  o  o  o  o  o  o  0
                 */
-                for (i = 1; i < NUM_LEDS; i+=2){
+                for (i = 0; i < NUM_LEDS; i+=2){
                     if((i-1)%4==0){
                         leds[1][i].setRGB(0,0,0);
                         leds[3][i].setRGB(0,0,0);
@@ -127,14 +142,14 @@ void PlainColor(){
                 -  o  -  o  -  o  -  0
                 */
                 for (i = 0; i < NUM_LEDS; i++){
-                    if((i+1)%3==0){
+                    if((i)%3==0){
                         leds[1][i].setRGB(0,0,0);
                         leds[3][i].setRGB(0,0,0);
                         leds[5][i].setRGB(0,0,0);
                         leds[7][i].setRGB(0,0,0);
                         leds[9][i].setRGB(0,0,0);
                     }
-                    if((i)%3==0){
+                    if((i+1)%3==0){
                         leds[0][i].setRGB(0,0,0);
                         leds[2][i].setRGB(0,0,0);
                         leds[4][i].setRGB(0,0,0);
@@ -159,8 +174,7 @@ void PlainColor(){
                         leds[5][i].setRGB(0,0,0);
                         leds[7][i].setRGB(0,0,0);
                         leds[9][i].setRGB(0,0,0);
-                    }
-                    if((i+1)%2==0){
+                    }else{
                         leds[0][i].setRGB(0,0,0);
                         leds[2][i].setRGB(0,0,0);
                         leds[4][i].setRGB(0,0,0);
@@ -179,14 +193,14 @@ void PlainColor(){
                 o  -  o  -  o  -  o  0
                 */
                 for (i = 0; i < NUM_LEDS; i++){
-                    if((i+1)%3!=0){
+                    if((i)%3!=0){
                         leds[1][i].setRGB(0,0,0);
                         leds[3][i].setRGB(0,0,0);
                         leds[5][i].setRGB(0,0,0);
                         leds[7][i].setRGB(0,0,0);
                         leds[9][i].setRGB(0,0,0);
                     }
-                    if((i)%3!=0){
+                    if((i+1)%3!=0){
                         leds[0][i].setRGB(0,0,0);
                         leds[2][i].setRGB(0,0,0);
                         leds[4][i].setRGB(0,0,0);
@@ -204,7 +218,7 @@ void PlainColor(){
                 -  o  -  o  -  o  -  1
                 -  -  -  -  -  -  -  0
                 */
-                for (i = 1; i < NUM_LEDS; i+=2){
+                for (i = 0; i < NUM_LEDS; i+=2){
                     if((i-1)%4!=0){
                         leds[1][i].setRGB(0,0,0);
                         leds[3][i].setRGB(0,0,0);
@@ -229,10 +243,11 @@ void PlainColor(){
     //Show with selected brightness
     FastLED.setBrightness(plainConfig.brightness);
     FastLED.show();
-    FastLED.delay(200);
+    FastLED.delay(1000 / FRAMES_PER_SECOND);
 }
 
-void Fire2012WithPalette()
+///Fire mode main run function
+void RunFire2012WithPalette()
 {
     random16_add_entropy(random());
     // Array of temperature readings at each simulation cell
@@ -274,25 +289,51 @@ void Fire2012WithPalette()
     FastLED.delay(1000 / FRAMES_PER_SECOND);
 }
 
+///Draw pallette mode main run function
+void RunDrawPalette(){
+
+    for( int s = 0; s < NUM_STRIPS; s++) {
+        for( int i = 0; i < NUM_LEDS; i++) {
+            uint8_t colorindex = ( i+1 ) * scale_to_palette;
+            CRGB color = ColorFromPalette(*fireConfig.palette, colorindex);
+            leds[s][i] = color;
+        }
+    }
+    FastLED.show();
+    FastLED.delay(1000 / FRAMES_PER_SECOND);
+}
+
+///Main effects run function, it calls current mode specific run function
 void RunLedEffects(){
     switch (mode)
     {
     case TypeMode::TEST:
-        TestLeds();
+        RunTestLeds();
         break;
     case TypeMode::PLAIN:
-        PlainColor();
+        RunPlainColor();
         break;
     case TypeMode::FIRE:
-        Fire2012WithPalette();
+        RunFire2012WithPalette();
+        break;
+    case TypeMode::BEATING:
+        RunDrawPalette();
         break;
     default:
         char buffer [50];
         Serial.println(sprintf (buffer, "ERROR!! Modo '%s' no soportado", mode ));
         break;
     }
-    if(!enabled){
-        TurnOff();
+
+    //If lamp was disabled or mode changed, we need to turn off leds and reset modeHasChanged state
+    if(!enabled || modeHasChanged){
+        modeHasChanged=false;
+        TurnOffLeds();
+    }
+
+    //All functions must use current settings and hasChanges are only used to interrumpt current effect
+    if(hasChanges){
+        hasChanges=false;
     }
 }
 #endif

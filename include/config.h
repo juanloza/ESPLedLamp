@@ -37,6 +37,7 @@ typedef struct plainConfigType{
 }plainConfigType;
 
 bool hasChanges = false;
+bool modeHasChanged = false;
 bool enabled;
 TypeMode mode;
 fireConfigType fireConfig;
