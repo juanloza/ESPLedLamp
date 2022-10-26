@@ -14,8 +14,8 @@ void RunDrawPalette(bool firstTime){
         runningOffset = 0;
     }
 
-    static CEveryNMilliseconds triggerpaletteWalk(0);
-    if(triggerpaletteWalk){
+    static CEveryNMilliseconds triggerPaletteWalk(0);
+    if(triggerPaletteWalk){
         if(paletteConfig.speed>0){
             //runningOffset+= paletteConfig.step;
             runningOffset+=float(paletteConfig.step) * float(paletteConfig.scale/255.0f);
@@ -23,8 +23,8 @@ void RunDrawPalette(bool firstTime){
                 runningOffset -= 256;   //Only to avoid toooooo large numbers
             }
         }
-        triggerpaletteWalk.setPeriod((255-paletteConfig.speed)*(MAX_MILIS_PALETTE_SPEED/255));
-        triggerpaletteWalk.reset();
+        triggerPaletteWalk.setPeriod((255-paletteConfig.speed)*(MAX_MILIS_PALETTE_SPEED/255.0f));
+        triggerPaletteWalk.reset();
     }
 
     uint8_t colorIndex;

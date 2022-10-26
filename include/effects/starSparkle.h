@@ -4,7 +4,7 @@
 #include "../helpers.h"
 #include "ledEffects.h"
 
-#define MAX_MILIS_FALLING_SPEED 6500
+#define MAX_MILIS_FALLING_SPEED 2500
 
 void initStarSparkleEffect(){
     FastLED.setBrightness(MAX_BRIGHTNESS);
@@ -25,8 +25,8 @@ void RunStarParkle(bool firstTime){
         initStarSparkleEffect();
     }
 
+    static CEveryNMilliseconds triggerFallStar(0);
     if(starSparkleConfig.fallStars){
-        static CEveryNMilliseconds triggerFallStar(0);
         if(triggerFallStar){
             for(uint8_t s=0; s<NUM_STRIPS; s++){
                 for(uint8_t i=0; i<NUM_LEDS-1; i++){
@@ -34,9 +34,11 @@ void RunStarParkle(bool firstTime){
                 }
                 leds[s][NUM_LEDS-1] = applyBrightnessToRGB(starSparkleConfig.bgColor, starSparkleConfig.bgBrightness);
             }
-            triggerFallStar.setPeriod((256-starSparkleConfig.fallingSpeed)*(MAX_MILIS_FALLING_SPEED/255.0f));
+            triggerFallStar.setPeriod((255-starSparkleConfig.fallingSpeed)*(MAX_MILIS_FALLING_SPEED/255.0f));
             triggerFallStar.reset();
         }
+    }else if(triggerFallStar.getElapsed() > UINT32_MAX-10000){
+        triggerFallStar.reset();
     }
     
 

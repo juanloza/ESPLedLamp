@@ -5,7 +5,7 @@
 #include "ledEffects.h"
 
 #define MAX_STRIP_COMETS 5  //Maximun of comets per strip ever, cometrConfig max per strip config should be equal or lower
-#define MAX_MILIS_COMET_SPEED 500
+#define MAX_MILIS_COMET_SPEED 1500
 
 int8_t totalRunningComets;
 bool activeComets[NUM_STRIPS][MAX_STRIP_COMETS];
@@ -83,7 +83,45 @@ void RunComet(bool firstTime){
         addComet();
     }
 
-    //Fade to black all pixels
+    static CEveryNMilliseconds triggerCometWalk(0);
+    if(triggerCometWalk){
+        for(uint8_t s=0; s<NUM_STRIPS; s++){
+            for(uint8_t a=0; a<MAX_STRIP_COMETS;a++){
+                //Skip inactive comets
+                if(!activeComets[s][a]){
+                    continue;
+                }
+
+                //Update comet position
+                if(cometDirection[s][a]>0){
+                    cometPosition[s][a]++;
+                    for(uint8_t m=0; m<cometConfig.size; m++){
+                        uint8_t pos = cometPosition[s][a]-m;
+                        if(pos<0 || pos>= NUM_LEDS){
+                            continue;
+                        }
+                        leds[s][pos] += cometColor[s][a];
+                    }
+                }else if(cometDirection[s][a]<0){
+                    cometPosition[s][a]--;
+                    for(uint8_t m=0; m<cometConfig.size; m++){
+                        uint8_t pos = cometPosition[s][a]+m;
+                        if(pos<0 || pos>= NUM_LEDS){
+                            continue;
+                        }
+                        leds[s][pos] += cometColor[s][a];
+                    }
+                }
+                checkEndComet(s, a);
+            }
+        }
+        
+
+        triggerCometWalk.setPeriod((255-cometConfig.speed)*(MAX_MILIS_COMET_SPEED/255.0f));
+        triggerCometWalk.reset();
+    }
+
+    //Fade to background color all pixels
     for(uint8_t s=0; s<NUM_STRIPS; s++) {
         for(uint8_t j=0; j<NUM_LEDS; j++) {
             if( (!cometConfig.randomDecay) || (random8()<=cometConfig.decayProbability) ) {
@@ -95,38 +133,8 @@ void RunComet(bool firstTime){
         }
     }
     
-    for(uint8_t s=0; s<NUM_STRIPS; s++){
-        for(uint8_t a=0; a<MAX_STRIP_COMETS;a++){
-            //Skip inactive comets
-            if(!activeComets[s][a]){
-                continue;
-            }
-
-            //Update comet position
-            if(cometDirection[s][a]>0){
-                cometPosition[s][a]++;
-                for(uint8_t m=0; m<cometConfig.size; m++){
-                    uint8_t pos = cometPosition[s][a]-m;
-                    if(pos<0 || pos>= NUM_LEDS){
-                        continue;
-                    }
-                    leds[s][pos] += cometColor[s][a];
-                }
-            }else if(cometDirection[s][a]<0){
-                cometPosition[s][a]--;
-                for(uint8_t m=0; m<cometConfig.size; m++){
-                    uint8_t pos = cometPosition[s][a]+m;
-                    if(pos<0 || pos>= NUM_LEDS){
-                        continue;
-                    }
-                    leds[s][pos] += cometColor[s][a];
-                }
-            }
-            checkEndComet(s, a);
-        }
     FastLED.show();
-    FastLED.delay((256-cometConfig.speedDelay)*(MAX_MILIS_COMET_SPEED/255.0f));
-    }
+    FastLED.delay(1000 / FRAMES_PER_SECOND);
 }
 
 #endif
