@@ -314,7 +314,7 @@ void handleCometModeConfig(AsyncWebServerRequest *request, String param=""){
     }
 
     if(param==p_speed || request->hasParam(p_speed)){
-        cometConfig.speedDelay=request->getParam(param!=""?p_value:p_speed)->value().toInt();
+        cometConfig.speed=request->getParam(param!=""?p_value:p_speed)->value().toInt();
         if(param==p_speed){
             return;
         }

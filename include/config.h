@@ -76,7 +76,7 @@ typedef struct cometConfigType{
     bool randomDecay;
     uint8_t decayProbability;
     uint8_t trailDecay;
-    uint8_t speedDelay;
+    uint8_t speed;
 }cometConfigType;
 
 typedef struct starSparkleConfigType{
@@ -158,7 +158,7 @@ String getJsonConfig(bool onlyCurrentMode=false){
         json+=tab+tab+"randomDecay:"+(String)cometConfig.randomDecay+','+ln;
         json+=tab+tab+"decayProbability:"+(String)cometConfig.decayProbability+ln;
         json+=tab+tab+"trailDecay:"+(String)cometConfig.trailDecay+ln;
-        json+=tab+tab+"speedDelay:"+(String)cometConfig.speedDelay+ln;
+        json+=tab+tab+"speedDelay:"+(String)cometConfig.speed+ln;
         json+=tab+tab+"maxTotalComets:"+(String)cometConfig.maxTotalComets+ln;
         json+=tab+tab+"maxStripComets:"+(String)cometConfig.maxStripComets+ln;
         json+=tab+"}"+ln;
