@@ -1,7 +1,7 @@
 #ifndef EFFECT_DRAWPALETTE_H
 #define EFFECT_DRAWPALETTE_H
 
-#define MAX_MILIS_PALETTE_SPEED 6500
+#define MAX_MILIS_PALETTE_SPEED 2000
 
 #include "ledEffects.h"
 
