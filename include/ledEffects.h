@@ -46,6 +46,10 @@ void RunLedEffects(){
         RunStarParkle(firstTimeMode);
         Serial.print("Modo: STAR SPARKLE");
         break;
+    case TypeMode::BOUNCINGBALLS:
+        RunBouncingBalls(firstTimeMode);
+        Serial.print("Modo: BOUNCING BALLS");
+        break;
     default:
         char buffer [50];
         Serial.println(sprintf (buffer, "ERROR!! Modo '%s' no soportado", mode ));

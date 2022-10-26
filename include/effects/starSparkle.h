@@ -4,7 +4,7 @@
 #include "../helpers.h"
 #include "ledEffects.h"
 
-#define MAX_MILIS_FALLING_SPEED 65000
+#define MAX_MILIS_FALLING_SPEED 6500
 
 void initStarSparkleEffect(){
     FastLED.setBrightness(MAX_BRIGHTNESS);
@@ -30,7 +30,7 @@ void RunStarParkle(bool firstTime){
         if(triggerFallStar){
             for(uint8_t s=0; s<NUM_STRIPS; s++){
                 for(uint8_t i=0; i<NUM_LEDS-1; i++){
-                leds[s][i] = leds[s][i+1];
+                    leds[s][i] = leds[s][i+1];
                 }
                 leds[s][NUM_LEDS-1] = applyBrightnessToRGB(starSparkleConfig.bgColor, starSparkleConfig.bgBrightness);
             }

@@ -1,7 +1,7 @@
 #ifndef EFFECT_DRAWPALETTE_H
 #define EFFECT_DRAWPALETTE_H
 
-#define MAX_MILIS_PALETTE_SPEED 65000
+#define MAX_MILIS_PALETTE_SPEED 6500
 
 #include "ledEffects.h"
 
@@ -23,7 +23,7 @@ void RunDrawPalette(bool firstTime){
                 runningOffset -= 256;   //Only to avoid toooooo large numbers
             }
         }
-        triggerpaletteWalk.setPeriod((255-paletteConfig.speed)*(255/MAX_MILIS_PALETTE_SPEED));
+        triggerpaletteWalk.setPeriod((255-paletteConfig.speed)*(MAX_MILIS_PALETTE_SPEED/255));
         triggerpaletteWalk.reset();
     }
 
