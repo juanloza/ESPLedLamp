@@ -6,7 +6,6 @@
 
 #define MAX_STRIP_BALLS 5  //Maximun of balls per strip ever, ballsConfig max per strip config should be equal or lower
 
-//float Gravity = -9.81;
 int StartHeight = 1;
 bool activeBalls[NUM_STRIPS][MAX_STRIP_BALLS];
 CRGB ballsColor[NUM_STRIPS][MAX_STRIP_BALLS];
@@ -21,7 +20,7 @@ int8_t totalActiveBalls;
 
 void initBuncingBallsEffect(){
   FastLED.setBrightness(MAX_BRIGHTNESS);
-  fill_all_strips(applyBrightnessToRGB(starSparkleConfig.bgColor, starSparkleConfig.bgBrightness));
+  fill_all_strips(applyBrightnessToRGB(ballsConfig.bgColor, ballsConfig.bgBrightness));
 }
 
 CRGB getBallColor(){
@@ -69,7 +68,7 @@ void RunBouncingBalls(bool firstTime){
       addNewBall();
   }
 
-  fill_all_strips(applyBrightnessToRGB(starSparkleConfig.bgColor, starSparkleConfig.bgBrightness));
+  fill_all_strips(applyBrightnessToRGB(ballsConfig.bgColor, ballsConfig.bgBrightness));
 
   for(uint8_t s=0; s<NUM_STRIPS; s++){
     for(uint8_t a=0; a<MAX_STRIP_BALLS;a++){
@@ -78,7 +77,7 @@ void RunBouncingBalls(bool firstTime){
           continue;
       }
 
-      TimeSinceLastBounce[s][a] =  (millis() - ClockTimeSinceLastBounce[s][a])/1000;
+      TimeSinceLastBounce[s][a] =  (millis() - ClockTimeSinceLastBounce[s][a])/1000.0f;
       Height[s][a] = 0.5 * ballsConfig.gravity * pow(TimeSinceLastBounce[s][a], 2.0 ) + ImpactVelocity[s][a] * TimeSinceLastBounce[s][a];
   
       if ( Height[s][a] < 0 ) {                      
@@ -88,6 +87,7 @@ void RunBouncingBalls(bool firstTime){
   
         if ( ImpactVelocity[s][a] < 0.05 ) {
           activeBalls[s][a] = false;
+          totalActiveBalls--;
           continue;
         }
       }
